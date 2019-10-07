@@ -1,5 +1,9 @@
 #!/usr/bin/env python 3
 # -*- coding: utf-8 -*-
+# provide currency name, f.e. Euro, US Dollar ..
+# provide period
+# call user module readxml
+# plot currency rates with matplotlib
 
 from readxml import *
 import matplotlib.pyplot as plt
