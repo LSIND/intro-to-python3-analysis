@@ -1,7 +1,4 @@
-# python3-course-intro
-study materials
-
-# Introduction to Python
+# Introduction to Python 3
 
 This repo presents all basic tasks for starting analysis using Python.
 
