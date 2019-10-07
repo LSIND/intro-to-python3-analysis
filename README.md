@@ -3,7 +3,7 @@ study materials
 
 # Introduction to Python
 
-This repo presents all basic task for starting analysis using Python programming
+This repo presents all basic tasks for starting analysis using Python.
 
 # Projects
 
