@@ -29,6 +29,5 @@ The code:
  - prints number of unique values
  - prints number of occurrences for every value in the form of: *temperature : occurrences* sorted by occurrences in ascending order
  - asks a user to input the value interval of temperatures *[a; b]* and prints temperatures and their occurrences sorted by temperature from *a* to *b* in ascending order
- -  breaks all text into independent words. In case of complex word containing hyphen it should be divided into two different words (f.e., *ninety-nine = ninety nine*).
 
 The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport for 1948 through 2016).
