@@ -27,5 +27,5 @@ with open("CrimeAndPunishment.txt", encoding="utf-8") as infile, open("outfile.t
         cleanwords = "\n".join(cleanwords) +"\n"
         outfile.write(cleanwords)
 
-print(maxlen)
-print(maxwords)
+print("Max length of word(s): {}".format(maxlen))
+print("List of word(s) with max length: ", maxwords)
