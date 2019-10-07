@@ -7,7 +7,7 @@ This repo presents all basic task for starting analysis using Python programming
 
 # Projects
 
-Projects covering intro to data analysis in **Python3**
+Projects covering intro to data analysis in **Python3.7**
 
 ## [Text Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TextAnalysis)
 
