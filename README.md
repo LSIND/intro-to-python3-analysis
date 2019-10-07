@@ -1,4 +1,4 @@
-# Introduction to Python 3
+# Introduction to elementary analysis using Python 3
 
 This repo presents all basic tasks for starting analysis using Python.
 
