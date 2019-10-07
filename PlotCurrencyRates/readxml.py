@@ -1,6 +1,6 @@
 #!/usr/bin/env python 3
 # -*- coding: utf-8 -*-
-'''reads currency rates from Cebtral Bank of Russia (cbr.ru) in XML-format using module xml.etree.ElementTree'''
+'''reads currency rates from Central Bank of Russia (cbr.ru) in XML-format using module xml.etree.ElementTree'''
 
 from urllib.request import urlopen
 from xml.etree.ElementTree import parse
