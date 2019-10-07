@@ -31,3 +31,7 @@ The code:
  - asks a user to input the value interval of temperatures *[a; b]* and prints temperatures and their occurrences sorted by temperature from *a* to *b* in ascending order
 
 The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport for 1948 through 2016).
+
+## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
+The code:
+ - reads xml
