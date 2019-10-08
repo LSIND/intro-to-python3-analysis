@@ -9,6 +9,7 @@ Projects covering intro to data analysis in **Python3.7**
 - basics of datetime module
 - basics of matplotlib module
 - basics of pandas module
+- read/write text data and XML
 
 ## [Text Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TextAnalysis)
 
