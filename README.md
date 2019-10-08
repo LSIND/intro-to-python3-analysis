@@ -38,7 +38,7 @@ The code (module **readxml**):
     * [XML with currency names and codes (ids)](http://www.cbr.ru/scripts/XML_val.asp?d=0). The code should retrieve the code from the provided name, f.e. Euro = R01239;
     * [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=05/09/2019&date_req2=30/09/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 73,0638 Rub at 05/09/2019 (dd/mm/YY);
     * uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data:
-     `from urllib.request import urlopen`
+    `from urllib.request import urlopen`
     `from xml.etree.ElementTree import parse`
     
 The code (**main. py**)
@@ -49,3 +49,17 @@ The code (**main. py**)
 - plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
 ![currency rates](https://lh4.googleusercontent.com/4pu82zvbhZsfKjePHdbjGoU6PDUscZztBdO-sG4KK_gOpzztYPvmwUiq1_VL4V60zgXH4beeyxZ6vQ=w1365-h937)
+
+## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
+
+The code:
+ - reads all text from .csv file using *pandas* module into dataframe
+     `import pandas as pd`
+ - converts column 'HireDate' to date format *%Y-%m-%d*
+ - creates series of column 'HireDate' and applies a condition to it within a period
+ - prints number of occurrences in the series (hired people per date)
+ - plots a bar graph of occurrences, f.e.:
+ 
+![employees counts](https://lh5.googleusercontent.com/5U4NL8lajRtgTPb4SRXb3EeQ9wSUJJAFJ0MjXzjELPFwLNmcjjIxp3LPh4vCYG3o_b3mp4TDQEgjNg=w1365-h937)
+ 
+The folder also includes empl.csv file with a set of employees names and hire dates and time.
