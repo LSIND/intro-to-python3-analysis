@@ -5,6 +5,9 @@ This repo presents all basic tasks for starting analysis using Python.
 ## Projects
 
 Projects covering intro to data analysis in **Python3.7**
+- using basic types: list, tuple, set
+- using basics of matplotlib module
+- using basics of pandas module
 
 ## [Text Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TextAnalysis)
 
