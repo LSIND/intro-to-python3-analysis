@@ -40,7 +40,7 @@ The code (module **readxml**):
     * uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data:
     
     `from urllib.request import urlopen`
-    `from xml.etree.ElementTree import parse`
+`from xml.etree.ElementTree import parse`
     
 The code (**main. py**)
 - provides initial variables: currency name and two dates (period). You can change it or ask user for input.
