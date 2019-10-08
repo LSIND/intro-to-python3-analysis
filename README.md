@@ -38,6 +38,7 @@ The code (module **readxml**):
     * [XML with currency names and codes (ids)](http://www.cbr.ru/scripts/XML_val.asp?d=0). The code should retrieve the code from the provided name, f.e. Euro = R01239;
     * [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=05/09/2019&date_req2=30/09/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 73,0638 Rub at 05/09/2019 (dd/mm/YY);
     * uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data:
+    
     `from urllib.request import urlopen`
     `from xml.etree.ElementTree import parse`
     
