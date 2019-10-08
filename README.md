@@ -23,7 +23,7 @@ The folder also includes .txt file with chapter 6 of Dostoevsky's "Crime and Pun
 ## [Temperatures Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TemperaturesAnalysis)
 
 The code:
- - reads all text from .txt file
+ - reads all text from .txt file containing list of tempreratures
  - prints maximum, minimum and average temperatures
  - prints number of values
  - prints number of unique values
@@ -53,7 +53,7 @@ The code (**main. py**)
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 
 The code:
- - reads all text from .csv file using *pandas* module into dataframe
+ - reads all data from .csv file containing employees names and hire dates and time using *pandas* module into dataframe
      `import pandas as pd`
  - converts column 'HireDate' to date format *%Y-%m-%d*
  - creates series of column 'HireDate' and applies a condition to it within a period
