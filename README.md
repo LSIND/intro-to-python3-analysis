@@ -55,8 +55,21 @@ The code (**main. py**)
 
 
 
-## [Flights Departure Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/FlightsDepAnalysis)
+## [Train Departure Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TrainDepAnalysis)
+The code:
+- reads .txt file with data of scheduled and actual departures of trains.
 
+| Train # | Sch Dp                    | Act Dp |
+|---------|---------------------------|--------|
+| 505     | 09/01/2019 7:11   PM (Su) | 7:39PM |
+| 508     | 09/01/2019   5:41 PM (Su) | 5:47PM |
+| 505     | 08/10/2019 7:11   PM (Sa) |        |
+| ...     | ...                       | ...    |
+
+- counts the number of not operated trains (column Act Dp is empty) and prints the number of not operated trains by day of the week;
+- counts the number of departed trains, on time departures, late departures and next day departures.
+
+The folder also includes depsalem.txt file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 
