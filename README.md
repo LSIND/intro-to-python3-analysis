@@ -70,7 +70,7 @@ The code (**main. py**)
      `enddate = "30.09.2019"`
 - plots a graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
-![currency rates](https://uc0afe30445d92bfd3bc7605b774.previews.dropboxusercontent.com/p/thumb/AAlLidPOsM_erUTqBRmTITGfKwUhv8Gd7wg-COelHMwNlnCRsSarN-qwlGzX-AB44kJnz3Qnwh3Twr7KUwgwfWJqEFOPnqVYHRxohCcrw_VT9iNlSYGMeakvvzu4ueSLYkzH4ADONbTfmZjGsA8vxaKGKoDxqP1Q4ns7WNd-B0ks9oaqV-SjmGGyYxsw3rTtU3o6QCfkPRLcNmGAOV9hSxHjoDIA8yiZJ2N6-pMT5CrhKxiy2xgUgIGUlyRujiGMFgAuihZu6q0-ok_2MxVxDHH42SCSHbb8biv77nUJQQJiGgx3VH3y6miCz5fgw7aOZYYei4dCnVCTpf9H2Ut3f4G1mP5IeG8Q2YP8GcCtf_xXtGTeeZkJmPHX8Y8N8TIZ8nHDGQYAUPIVPcmXiAfFaMZ_/p.png?fv_content=true&size_mode=5)
+![currency rates](https://www.dropbox.com/s/zplryx10b7o7iqr/plotemplcount.PNG?dl=1)
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 
