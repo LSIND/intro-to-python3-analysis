@@ -30,11 +30,19 @@ The code:
 The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport for 1948 through 2016).
 
 ## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
-The code:
- - reads xml from [Central Bank of Russia](www.cbr.tu) containing currency [rates](http://www.cbr.ru/development/SXML/)
- 
-
-    from urllib.request import urlopen
-    from xml.etree.ElementTree import parse
+The code (module **readxml**):
+ - reads data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) containing currency information in XML-format:
+ --  [XML with currency names and codes (ids)](http://www.cbr.ru/scripts/XML_val.asp?d=0). The code should retrieve the code from the provided name, f.e. Euro = R01239;
+ -- [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=02/03/2019&date_req2=05/10/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 71,3509 Rub at 05/10/2019 (dd/mm/YY);
+ -- uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data: 
+     `from urllib.request import urlopen`
+    `from xml.etree.ElementTree import parse`
     
-![alt text](https://uce0b41a9ce15d899c869ad3c691.previews.dropboxusercontent.com/p/thumb/AAmKM2Ig7gsQHqa4sCwXDjQ-7VHNF6tG_Q5he9AVHMkvoJFUhacjz_4tGB7jYurlEa5KV_GDK__eAXW5Zr9slSHNPpDVIALh8zdlq7j9HDEvr9P4zeT8RoVPdGvlhQAZOsXDP-KlaJR0_QwjbrHEyvToJ7Ko6r7fcZvBEX-FhThJkuTOLdTZcr0qBTNKq2lDKMpmMw-LII-5slsyzTjgDkdvX3Q_2j2zbEqL-7dbZvZXLkbI6BPGET-QSv6ihSutGmUyzT4nCYWdA2OpiodX4_kgfq44E8b5JnwjDs2o4_4ZZgWiMVSB-8WqgjImANx6Ib2Ji0Ah9t4-g7rw97Pep7AnSpVyP_BKnHl7BY9qILDtrX0iGHQL6coHYaB_og13D0A/p.jpeg?fv_content=true&size_mode=5)
+The code (**main. py**)
+- provides initial variables: currency name and two dates (period). You can change it or ask user for input.
+     `cur = "Euro"`
+     `startdate = "02.03.2019"`
+     `enddate = "05.10.2019"`
+- plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e 
+
+![currency rates](https://lh3.googleusercontent.com/fSzq_PF1p9JRdKP2aLRAA_oP4U-33-U3Wom81daS-RBY-kidi81LPJ8r-gDgRS3UWMG5hak6FE60kg=w1365-h937-rw)
