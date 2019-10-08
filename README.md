@@ -67,6 +67,7 @@ The code:
 | ...     | ...                       | ...    |
 
 - counts the number of not operated trains (column *Act Dp* is empty) and prints the number of not operated trains by day of the week using the module *collections*;
+
    `from collections import Counter`
 - counts the number of departed trains, on time departures, late departures and next day departures.
 
