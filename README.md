@@ -32,19 +32,17 @@ The folder also includes 1tempdata.txt file with a set of temperature data (the 
 ## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
 The code (module **readxml**):
  - reads data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) containing currency information in XML-format:
- 
  --  [XML with currency names and codes (ids)](http://www.cbr.ru/scripts/XML_val.asp?d=0). The code should retrieve the code from the provided name, f.e. Euro = R01239;
- -- [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=02/03/2019&date_req2=05/10/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 71,3509 Rub at 05/10/2019 (dd/mm/YY);
- -- uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data: 
+ -- [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=28/08/2019&date_req2=05/10/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 71,3509 Rub at 05/10/2019 (dd/mm/YY);
+ -- uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data:
      `from urllib.request import urlopen`
     `from xml.etree.ElementTree import parse`
     
 The code (**main. py**)
 - provides initial variables: currency name and two dates (period). You can change it or ask user for input.
-
      `cur = "Euro"`    
-     `startdate = "02.03.2019"`    
+     `startdate = "28.08.2019"`    
      `enddate = "05.10.2019"`
-- plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e 
+- plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
-![currency rates](https://lh3.googleusercontent.com/4iAVD73I8TtrtYFmqb-Ik8AeBDvDwoyPPZGvz-HO9mXstUMs7AJYPpma6xCzMgueMr9SHO4JFgIBYg=w1365-h937-rw | width=250)
+![currency rates](https://lh6.googleusercontent.com/nOwNHMzicloikeA-RfWPwb4dVMpY-RVBmv2IRAdpjyNd4RuP902P9ZKHMtYIVVBuo2i06XKCUCgYjQ=w1365-h937-rw)
