@@ -42,8 +42,7 @@ The code (module **readxml**):
 The code (**main. py**)
 - provides initial variables: currency name and two dates (period). You can change it or ask user for input.
 
-     `cur = "Euro"`
-     
+     `cur = "Euro"`    
      `startdate = "02.03.2019"`    
      `enddate = "05.10.2019"`
 - plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e 
