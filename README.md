@@ -31,4 +31,10 @@ The folder also includes 1tempdata.txt file with a set of temperature data (the 
 
 ## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
 The code:
- - reads xml
+ - reads xml from [Central Bank of Russia](www.cbr.tu) containing currency [rates](http://www.cbr.ru/development/SXML/)
+ 
+
+    from urllib.request import urlopen
+    from xml.etree.ElementTree import parse
+    
+![alt text](https://user-images.githubusercontent.com/7215528/30245160-a8bf1704-959e-11e7-90c1-37612c31ea5f.png)
