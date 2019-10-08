@@ -6,6 +6,7 @@ This repo presents all basic tasks for starting analysis using Python.
 
 Projects covering intro to data analysis in **Python3.7**
 - using basic types: list, tuple, set
+- basics of datetime module
 - basics of matplotlib module
 - basics of pandas module
 
