@@ -70,7 +70,7 @@ The code (**main. py**)
      `enddate = "30.09.2019"`
 - plots a graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
-![currency rates](https://www.dropbox.com/s/zplryx10b7o7iqr/plotemplcount.PNG?dl=1)
+![currency rates](https://www.dropbox.com/s/d2b03ndlok87q9j/ploteurotorub.PNG?raw=1)
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 
@@ -89,6 +89,6 @@ The code:
  - prints number of occurrences in the series (hired people per date)
  - plots a bar graph of occurrences, f.e.:
  
-![employees counts](https://ucc29a7063055539a0b61a845bb8.previews.dropboxusercontent.com/p/thumb/AAmtsPW3ngpx0jmaVSf-TAdEX_W5GgyJavvIf6vicdJ0vfJq5G4brdvjuz2onDxmO7DyVKTU9264cJFLB9zBV4M6-zevaX4iMhxZWPcuBOmGSZ76n3PAQJbcJrX7hPbH3Rgs5bTTzWHAJ-ZQCrGX_u6GY1pTKPP30qHTm0O8DOB-UMYzR-YxTFRbjNj7fq-uzARsvraK6EduW4jNFLFkve8GzIQcFcUBnMiCiSeaW9LZ_Z3Z0sg1eTVxA_l0xefhZc9A3XZ2ho09sb4knEk4lA2LUUSpn_Lzp7yKqJ6_0QmrywLE5k18bUxgHv1ski02J40djian-ggMhxpXaF9qEjZ0RuY8-iiPd5PMv3RM8yu-SmZyNwt5eKGlrwYZm8mVZMzvrWvaA7jG1HyOdOGkgb53/p.png?fv_content=true&size_mode=5)
+![employees counts](https://www.dropbox.com/s/zplryx10b7o7iqr/plotemplcount.PNG?raw=1)
  
 The folder also includes empl.csv file with a set of employees names and hire dates and time.
