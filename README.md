@@ -44,8 +44,7 @@ The code (**main. py**)
 
      `cur = "Euro"`
      
-     `startdate = "02.03.2019"`
-     
+     `startdate = "02.03.2019"`    
      `enddate = "05.10.2019"`
 - plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e 
 
