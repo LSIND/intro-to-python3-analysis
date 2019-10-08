@@ -27,7 +27,7 @@ The code:
  - prints number of occurrences for every value in the form of: *temperature : occurrences* sorted by occurrences in ascending order
  - asks a user to input the value interval of temperatures *[a; b]* and prints temperatures and their occurrences sorted by temperature from *a* to *b* in ascending order
 
-The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport for 1948 through 2016).
+The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport 1948 - 2016).
 
 ## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
 The code (module **readxml**):
@@ -41,6 +41,7 @@ The code (module **readxml**):
     
 The code (**main. py**)
 - provides initial variables: currency name and two dates (period). You can change it or ask user for input.
+
      `cur = "Euro"`
      `startdate = "02.03.2019"`
      `enddate = "05.10.2019"`
