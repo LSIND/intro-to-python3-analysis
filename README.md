@@ -88,6 +88,6 @@ The code:
  - prints number of occurrences in the series (hired people per date)
  - plots a bar graph of occurrences, f.e.:
  
-![employees counts](https://lh5.googleusercontent.com/5U4NL8lajRtgTPb4SRXb3EeQ9wSUJJAFJ0MjXzjELPFwLNmcjjIxp3LPh4vCYG3o_b3mp4TDQEgjNg=w1365-h937)
+![employees counts](https://ucc29a7063055539a0b61a845bb8.previews.dropboxusercontent.com/p/thumb/AAmtsPW3ngpx0jmaVSf-TAdEX_W5GgyJavvIf6vicdJ0vfJq5G4brdvjuz2onDxmO7DyVKTU9264cJFLB9zBV4M6-zevaX4iMhxZWPcuBOmGSZ76n3PAQJbcJrX7hPbH3Rgs5bTTzWHAJ-ZQCrGX_u6GY1pTKPP30qHTm0O8DOB-UMYzR-YxTFRbjNj7fq-uzARsvraK6EduW4jNFLFkve8GzIQcFcUBnMiCiSeaW9LZ_Z3Z0sg1eTVxA_l0xefhZc9A3XZ2ho09sb4knEk4lA2LUUSpn_Lzp7yKqJ6_0QmrywLE5k18bUxgHv1ski02J40djian-ggMhxpXaF9qEjZ0RuY8-iiPd5PMv3RM8yu-SmZyNwt5eKGlrwYZm8mVZMzvrWvaA7jG1HyOdOGkgb53/p.png?fv_content=true&size_mode=5)
  
 The folder also includes empl.csv file with a set of employees names and hire dates and time.
