@@ -45,4 +45,4 @@ The code (**main. py**)
      `enddate = "05.10.2019"`
 - plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
-![currency rates](https://lh6.googleusercontent.com/nOwNHMzicloikeA-RfWPwb4dVMpY-RVBmv2IRAdpjyNd4RuP902P9ZKHMtYIVVBuo2i06XKCUCgYjQ=w1365-h937-rw)
+![currency rates](https://lh4.googleusercontent.com/4pu82zvbhZsfKjePHdbjGoU6PDUscZztBdO-sG4KK_gOpzztYPvmwUiq1_VL4V60zgXH4beeyxZ6vQ=w1365-h937)
