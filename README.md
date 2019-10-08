@@ -71,7 +71,7 @@ The code:
    `from collections import Counter`
 - counts the number of departed trains, on time departures, late departures and next day departures.
 
-The folder also includes depsalem.txt file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
+The folder also includes [depsalem.txt](https://github.com/LSIND/intro-to-python3-analysis/blob/master/TrainDepAnalysis/depsalem.txt) file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 
