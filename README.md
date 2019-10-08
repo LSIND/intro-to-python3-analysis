@@ -33,6 +33,24 @@ The code:
 
 The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport 1948 - 2016).
 
+## [Train Departure Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TrainDepAnalysis)
+The code:
+- reads .txt file with data of scheduled and actual departures of trains with the help of module *datetime*
+
+| Train # | Sch Dp                    | Act Dp |
+|---------|---------------------------|--------|
+| 505     | 09/01/2019 7:11   PM (Su) | 7:39PM |
+| 508     | 09/01/2019   5:41 PM (Su) | 5:47PM |
+| 505     | 08/10/2019 7:11   PM (Sa) |        |
+| ...     | ...                       | ...    |
+
+- counts the number of not operated trains (column *Act Dp* is empty) and prints the number of not operated trains by day of the week using the module *collections*;
+
+   `from collections import Counter`
+- counts the number of departed trains, on time departures, late departures and next day departures.
+
+The folder also includes [depsalem.txt](https://github.com/LSIND/intro-to-python3-analysis/blob/master/TrainDepAnalysis/depsalem.txt) file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
+
 ## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
 The code (module **readxml**):
  - reads data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) containing currency information in XML-format:
@@ -52,25 +70,6 @@ The code (**main. py**)
 - plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
 ![currency rates](https://uc0afe30445d92bfd3bc7605b774.previews.dropboxusercontent.com/p/thumb/AAlLidPOsM_erUTqBRmTITGfKwUhv8Gd7wg-COelHMwNlnCRsSarN-qwlGzX-AB44kJnz3Qnwh3Twr7KUwgwfWJqEFOPnqVYHRxohCcrw_VT9iNlSYGMeakvvzu4ueSLYkzH4ADONbTfmZjGsA8vxaKGKoDxqP1Q4ns7WNd-B0ks9oaqV-SjmGGyYxsw3rTtU3o6QCfkPRLcNmGAOV9hSxHjoDIA8yiZJ2N6-pMT5CrhKxiy2xgUgIGUlyRujiGMFgAuihZu6q0-ok_2MxVxDHH42SCSHbb8biv77nUJQQJiGgx3VH3y6miCz5fgw7aOZYYei4dCnVCTpf9H2Ut3f4G1mP5IeG8Q2YP8GcCtf_xXtGTeeZkJmPHX8Y8N8TIZ8nHDGQYAUPIVPcmXiAfFaMZ_/p.png?fv_content=true&size_mode=5)
-
-
-## [Train Departure Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TrainDepAnalysis)
-The code:
-- reads .txt file with data of scheduled and actual departures of trains with the help of module *datetime*
-
-| Train # | Sch Dp                    | Act Dp |
-|---------|---------------------------|--------|
-| 505     | 09/01/2019 7:11   PM (Su) | 7:39PM |
-| 508     | 09/01/2019   5:41 PM (Su) | 5:47PM |
-| 505     | 08/10/2019 7:11   PM (Sa) |        |
-| ...     | ...                       | ...    |
-
-- counts the number of not operated trains (column *Act Dp* is empty) and prints the number of not operated trains by day of the week using the module *collections*;
-
-   `from collections import Counter`
-- counts the number of departed trains, on time departures, late departures and next day departures.
-
-The folder also includes [depsalem.txt](https://github.com/LSIND/intro-to-python3-analysis/blob/master/TrainDepAnalysis/depsalem.txt) file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 
