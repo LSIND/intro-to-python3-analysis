@@ -10,13 +10,15 @@ import matplotlib.pyplot as plt
 
 def main():
     cur = "Euro"
-    startdate = "01.01.2019"
-    enddate = "01.03.2019"
+    startdate = "05.09.2019"
+    enddate = "30.09.2019"
     tup = getInput(cur, startdate, enddate)
     #print(tup)
     if tup is not None:
         plt.plot(tup[0], tup[1], marker = ".")
-        plt.gcf().autofmt_xdate()
+        for i, txt in enumerate(tup[1]):
+            plt.annotate(round(txt,2), (tup[0][i], tup[1][i]), fontsize=6)
+        #plt.gcf().autofmt_xdate()
         title = "Currency rates: {} on period {} - {}".format(cur, startdate,enddate)
         plt.title(title)
         plt.xlabel("Dates")
