@@ -33,7 +33,7 @@ The folder also includes 1tempdata.txt file with a set of temperature data (the 
 The code (module **readxml**):
  - reads data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) containing currency information in XML-format:
     * [XML with currency names and codes (ids)](http://www.cbr.ru/scripts/XML_val.asp?d=0). The code should retrieve the code from the provided name, f.e. Euro = R01239;
-    * [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=28/08/2019&date_req2=05/10/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 71,3509 Rub at 05/10/2019 (dd/mm/YY);
+    * [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=05/09/2019&date_req2=30/09/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 73,0638 Rub at 05/09/2019 (dd/mm/YY);
     * uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data:
      `from urllib.request import urlopen`
     `from xml.etree.ElementTree import parse`
@@ -41,8 +41,8 @@ The code (module **readxml**):
 The code (**main. py**)
 - provides initial variables: currency name and two dates (period). You can change it or ask user for input.
      `cur = "Euro"`    
-     `startdate = "28.08.2019"`    
-     `enddate = "05.10.2019"`
+     `startdate = "05.09.2019"`    
+     `enddate = "30.09.2019"`
 - plots graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
 ![currency rates](https://lh4.googleusercontent.com/4pu82zvbhZsfKjePHdbjGoU6PDUscZztBdO-sG4KK_gOpzztYPvmwUiq1_VL4V60zgXH4beeyxZ6vQ=w1365-h937)
