@@ -94,15 +94,6 @@ NumPy array without any elements (`n1 = np.array([])`) consumes 96 bytes. For ev
 
 `96 + 4 * len(n1) = 108 b (numpy array)`
 
-`l1 = [5, 6, 15]`                              `n1 = np.array([5, 6, 15])`                          
-
-----------------------------                   ----------------------------
-| |5| |6| |15|     l1 info  |                  | |5| |6| |15|     n1 info  |
-----------------------------                   ----------------------------
-   |   |   |          |                                      |
-   v   v   v          v                                      v
-      int         list object                          np array object
-
 The code:
 - creates two identical built-in lists L1 and L2 and numpy arrays N1 and N2
 - counts the time (in sec.) of merging two lists and two numpy arrays
