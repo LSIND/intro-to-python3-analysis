@@ -68,18 +68,17 @@
     * [XML с названиями валют и кодами (идентификаторами)](http://www.cbr.ru/scripts/XML_val.asp?d=0). Код должен извлекать идентификатор из предоставленного имени, например Euro = R01239;
     * [XML с курсами валют](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=05/09/2019&date_req2=30/09/2019&VAL_NM_RQ=R01239) в зависимости от идентификатора валюты и промежутка времени (двух дат). Элемент Value содержит отношение валюты к российскому рублю на определенную дату, например 1 евро = 73,0638 руб. на 05/09/2009 (дд/мм/гг);
 - использует модули *urllib.request* и *xml.etree.ElementTree* для извлечения и анализа данных XML:
- 
-     `from urllib.request import urlopen`
+    
+     `from urllib.request import urlopen`    
      `from xml.etree.ElementTree import parse`
-     
+    
 Код (**main. py**):
 
 - предоставляет начальные переменные: название валюты и две даты (период). Их можно изменить или запросить у пользователя.
 
-     `cur = "Euro"`
-     `startdate = "05.09.2019"`
+     `cur = "Euro"`    
+     `startdate = "05.09.2019"`    
      `enddate = "30.09.2019"`
-     
 - строит график курсов валют: Валюта / Российский рубль, используя *matplotlib*, например:
 
 ![currency rates](https://www.dropbox.com/s/d2b03ndlok87q9j/ploteurotorub.PNG?raw=1)
