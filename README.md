@@ -12,6 +12,7 @@ Projects covering intro to data analysis using **Python3.7**
 - read/write text data and XML
 
 ## [Text Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TextAnalysis)
+*Using built-in capabilities for string data processing*
 
 The code:
  - reads all text from .txt file (incl. unicode) 
@@ -23,6 +24,7 @@ The code:
 The folder also includes .txt file with chapter 6 of Dostoevsky's "Crime and Punishment" with English and Russian text.
 
 ## [Temperatures Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TemperaturesAnalysis)
+*Using built-in capabilities for elementary analysis*
 
 The code:
  - reads all text from .txt file containing list of tempreratures
@@ -35,8 +37,12 @@ The code:
 The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport 1948 - 2016).
 
 ## [Train Departure Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TrainDepAnalysis)
+*Using datetime module*
+
 The code:
 - reads .txt file with data of scheduled and actual departures of trains with the help of module *datetime*
+
+    `import datetime`
 
 | Train # | Sch Dp                    | Act Dp |
 |---------|---------------------------|--------|
@@ -53,6 +59,8 @@ The code:
 The folder also includes [depsalem.txt](https://github.com/LSIND/intro-to-python3-analysis/blob/master/TrainDepAnalysis/depsalem.txt) file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
 
 ## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
+*Using xml module to parse XML-data and matplotlib to plot it*
+
 The code (module **readxml**):
  - reads data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) containing currency information in XML-format:
     * [XML with currency names and codes (ids)](http://www.cbr.ru/scripts/XML_val.asp?d=0). The code should retrieve the code from the provided name, f.e. Euro = R01239;
@@ -72,7 +80,17 @@ The code (**main. py**)
 
 ![currency rates](https://www.dropbox.com/s/d2b03ndlok87q9j/ploteurotorub.PNG?raw=1)
 
+
+## [Numpy Array vs. List](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
+*Using numpy module*
+
+The code:
+- creates two identical built-in lists L1 and L2 and numpy arrays N1 and N2
+- counts the time (in sec.) of merging two lists and two numpy arrays
+- prints in the ratio t1/t2 - how much faster merging numpy array is in comparison to built-in list
+
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
+*Using pandas module*
 
 The code:
  - reads all data from .csv file containing employees names and hire dates/time using *pandas* module into dataframe
