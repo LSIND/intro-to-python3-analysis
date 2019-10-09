@@ -86,13 +86,15 @@ The code (**main. py**)
 
 `import numpy as np`
 
-Python built-in lists without any elements (`l1 = []`) consumes 64 bytes. For every new element, we need another 8 bytes for the reference to the new object. The new int object itself consumes 28 bytes. The size of a list `l1 = [5, 10, 15]` can be calculated with:
+Python built-in list without any elements (`l1 = []`) consumes 64 bytes. For every new element, it needs another 8 bytes for the reference to the new object. The new int object itself consumes 28 bytes. The size of a list `l1 = [5, 10, 15]` can be calculated with:
 
 `64 + 8 * len(lst) + 28 * len(lst) = 88 b (list) + 84 b (int elements)`
 
-NumPy array without any elements (`n1 = np.array([])`) consumes 96 bytes. For every new element, we need another 8 bytes for the reference to the new object and 4 bytes for the int object. The size of a np array `n1 = np.array([5, 10, 15])` can be calculated with:
+NumPy array without any elements (`n1 = np.array([])`) consumes 96 bytes. For every new element, it also needs another 8 bytes for the reference to the new object and 4 bytes for the reference to the new int object. The size of a numpy array `n1 = np.array([5, 10, 15])` can be calculated with:
 
 `96 + 4 * len(n1) = 108 b (numpy array)`
+
+NumPy arrays have smaller memory consumption and better runtime. 
 
 The code:
 - creates two identical built-in lists L1 and L2 and numpy arrays N1 and N2
