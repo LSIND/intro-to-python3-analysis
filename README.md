@@ -12,7 +12,7 @@ Projects covering intro to data analysis using **Python3.7**
 - read/write text data and XML
 
 ## [Text Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TextAnalysis)
-*Using built-in capabilities for string data processing*
+>> *Using built-in capabilities for string data processing*
 
 The code:
  - reads all text from .txt file (incl. unicode) 
