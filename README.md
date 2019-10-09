@@ -90,9 +90,9 @@ Python built-in list without any elements (`l1 = []`) consumes 64 bytes. For eve
 
 `64 + 8 * len(l1) + 28 * len(l1) = 88 b (list) + 84 b (int elements) = 172 bytes`
 
-NumPy array without any elements (`n1 = np.array([])`) consumes 96 bytes. For every new element, it also needs another 8 bytes for the reference to the new object and 4 bytes for the reference to the new int object. The size of a numpy array `n1 = np.array([5, 10, 15])` can be calculated with:
+NumPy array without any elements (`n1 = np.array([])`) consumes 96 bytes. For every new element, it also needs another 8 bytes for the reference to the new object. The size of a numpy array `n1 = np.array([5, 10, 15])`, where elements are of int64 type, can be calculated with:
 
-`96 + 4 * len(n1) = 108 bytes`
+`96 + 8 * len(n1) = 120 bytes`
 
 NumPy arrays have smaller memory consumption and better runtime. 
 
