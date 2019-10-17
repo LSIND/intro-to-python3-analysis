@@ -24,6 +24,8 @@ print(freq)
 
 fig = plt.figure(figsize=(6,6))
 ax = freq.plot(kind='bar', color='purple')
+for p in ax.patches:
+    ax.annotate(str(p.get_height()), (p.get_x() * 1.005, p.get_height() * 1.005))
 fig.autofmt_xdate()
 
 plt.grid(True)
