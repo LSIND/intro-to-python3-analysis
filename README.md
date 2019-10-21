@@ -91,6 +91,7 @@ The code (**main. py**)
 
 ## [Numpy Array vs. List](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
 > *Using numpy module*
+
 Compare working time of numpy arrays and built-in lists.
 
 `import numpy as np`
@@ -112,17 +113,18 @@ The code:
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 > *Using pandas module*
-Create a dataframe from .csv file containing information about Employee and his hire datetime. Plot a graph with quantity of hired people by days of specified month.
 
-The code:
- - reads all data from .csv file containing employees names and hire dates/time using *pandas* module into dataframe
-     `import pandas as pd`
+Create a dataframe from .csv file containing information about Employee and his hire datetime. Plot a graph with quantity of hired people by days of specified month.
     
 | ID  | LastName | FirstName | HireDate  | HireTime |
 |-----|----------|-----------|-----------|----------|
 | 1   | Newell   | Pamella   | 9/9/2018  | 14:57:00 |
 | 2   | Green    | Edna      | 8/28/2018 | 7:27:00  |
 | ... | ...      |  ...      | ...       | ...      |
+
+The code:
+ - reads all data from .csv file containing employees names and hire dates/time using *pandas* module into dataframe
+     `import pandas as pd`
 
  - converts column 'HireDate' to date format *%Y-%m-%d*
  - creates series of column 'HireDate' and applies a condition to it within a period
