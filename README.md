@@ -1,6 +1,6 @@
 # Introduction to elementary analysis using Python 3
 
-This repo presents all basic tasks for starting analysis using Python.
+This repository presents all basic tasks as an introduction to analysis using Python.
 
 ## Projects
 
@@ -14,6 +14,8 @@ Projects covering intro to data analysis using **Python3.7**
 ## [Text Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TextAnalysis)
 > *Using built-in capabilities for string data processing*
 
+Read .txt file, delete all punctuations, break all text into independent words and write them to a new .txt file. Print word(s) with maximum length on console.
+
 The code:
  - reads all text from .txt file (incl. unicode) 
  - deletes all punctuations from the text
@@ -25,6 +27,8 @@ The folder also includes .txt file with chapter 6 of Dostoevsky's "Crime and Pun
 
 ## [Temperatures Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TemperaturesAnalysis)
 > *Using built-in capabilities for elementary analysis*
+
+Read .txt file, which contains a list of decimal numbers (temperatures), find and print maximum, minimum and average temperatures, print number of elements and unique elements, print number of occurances for every value in the form of: *temperature : occurrences*. Ask user to input an interval and print temperatures and occurences in this interval.
 
 The code:
  - reads all text from .txt file containing list of tempreratures
@@ -39,10 +43,7 @@ The folder also includes 1tempdata.txt file with a set of temperature data (the 
 ## [Train Departure Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TrainDepAnalysis)
 > *Using datetime module*
 
-The code:
-- reads .txt file with data of scheduled and actual departures of trains with the help of module *datetime*
-
-    `import datetime`
+Read .txt file, which contains data with train departures (train no, datetime of scheduled department, datetime of actual department), find and print number of not operated trains, departures on time, late departures and next day departures.
 
 | Train # | Sch Dp                    | Act Dp |
 |---------|---------------------------|--------|
@@ -50,6 +51,11 @@ The code:
 | 508     | 09/01/2019   5:41 PM (Su) | 5:47PM |
 | 505     | 08/10/2019 7:11   PM (Sa) |        |
 | ...     | ...                       | ...    |
+
+The code:
+- reads .txt file with data of scheduled and actual departures of trains with the help of module *datetime*
+
+    `import datetime`  
 
 - counts the number of not operated trains (column *Act Dp* is empty) and prints the number of not operated trains by day of the week using the module *collections*;
 
@@ -60,6 +66,8 @@ The folder also includes [depsalem.txt](https://github.com/LSIND/intro-to-python
 
 ## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
 > *Using xml module to parse XML-data and matplotlib to plot it*
+
+Read XML-data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) with currency information depending on period with ratio to Russian ruble. Plot the currency rates.
 
 The code (module **readxml**):
  - reads data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) containing currency information in XML-format:
@@ -83,6 +91,7 @@ The code (**main. py**)
 
 ## [Numpy Array vs. List](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
 > *Using numpy module*
+Compare working time of numpy arrays and built-in lists.
 
 `import numpy as np`
 
@@ -103,6 +112,7 @@ The code:
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 > *Using pandas module*
+Create a dataframe from .csv file containing information about Employee and his hire datetime. Plot a graph with quantity of hired people by days of specified month.
 
 The code:
  - reads all data from .csv file containing employees names and hire dates/time using *pandas* module into dataframe
