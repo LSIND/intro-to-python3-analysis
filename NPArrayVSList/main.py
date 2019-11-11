@@ -18,7 +18,8 @@ t_list = time.time()-start
 print("Time of merging lists:", t_list)
 
 start = time.time()
-result = N1 + N2 # merge two numpy arrays
+result = np.stack((N1, N2)) # merge two numpy arrays
+result = result.T # transpose to get the same result as zip
 t_npa = time.time()-start
 print("Time of merging numpy arrays:", t_npa)
 
