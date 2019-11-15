@@ -54,12 +54,15 @@ Read .txt file, which contains data with train departures (train no, datetime of
 
 The code:
 - reads .txt file with data of scheduled and actual departures of trains with the help of module *datetime*
-
-    `import datetime`  
+    ```python
+    import datetime
+    ```
 
 - counts the number of not operated trains (column *Act Dp* is empty) and prints the number of not operated trains by day of the week using the module *collections*;
+    ```python
+   from collections import Counter
+   ```
 
-   `from collections import Counter`
 - counts the number of departed trains, on time departures, late departures and next day departures.
 
 The folder also includes [depsalem.txt](https://github.com/LSIND/intro-to-python3-analysis/blob/master/TrainDepAnalysis/depsalem.txt) file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
@@ -74,16 +77,18 @@ The code (module **readxml**):
     * [XML with currency names and codes (ids)](http://www.cbr.ru/scripts/XML_val.asp?d=0). The code should retrieve the code from the provided name, f.e. Euro = R01239;
     * [XML with currency rates](http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=05/09/2019&date_req2=30/09/2019&VAL_NM_RQ=R01239) depending on currency code and two dates. Element < Value >  contains ratio to Russian ruble at a specific date, f.e. 1 Euro = 73,0638 Rub at 05/09/2019 (dd/mm/YY);
     * uses modules *urllib.request* and *xml.etree.ElementTree* to retrieve and parse XML data:
-    
-     `from urllib.request import urlopen`    
-     `from xml.etree.ElementTree import parse`
+     ```python
+     from urllib.request import urlopen
+     from xml.etree.ElementTree import parse
+     ```
     
 The code (**main. py**)
 - provides initial variables: currency name and two dates (period). You can change it or ask user for input.
-
-     `cur = "Euro"`    
-     `startdate = "05.09.2019"`    
-     `enddate = "30.09.2019"`
+     ```python
+     cur = "Euro"    
+     startdate = "05.09.2019"    
+     enddate = "30.09.2019"
+     ```
 - plots a graph of currency rates Currency/Russian ruble using *matplotlib*, f.e:
 
 ![currency rates](https://www.dropbox.com/s/d2b03ndlok87q9j/ploteurotorub.PNG?raw=1)
@@ -93,8 +98,9 @@ The code (**main. py**)
 > *Using numpy module*
 
 Compare working time of numpy arrays and built-in lists.
-
-`import numpy as np`
+```python
+import numpy as np
+```
 
 Python built-in list without any elements (`l1 = []`) consumes 64 bytes. For every new element, it needs another 8 bytes for the reference to the new object. The new int object itself consumes 28 bytes. The size of a list `l1 = [5, 10, 15]` can be calculated with:
 
@@ -124,7 +130,9 @@ Create a dataframe from .csv file containing information about Employee and his 
 
 The code:
  - reads all data from .csv file containing employees names and hire dates/time using *pandas* module into dataframe
-     `import pandas as pd`
+     ```python
+     import pandas as pd
+     ```
 
  - converts column 'HireDate' to date format *%Y-%m-%d*
  - creates series of column 'HireDate' and applies a condition to it within a period
