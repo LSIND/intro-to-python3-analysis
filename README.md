@@ -94,28 +94,41 @@ The code (**main. py**)
 ![currency rates](https://www.dropbox.com/s/d2b03ndlok87q9j/ploteurotorub.PNG?raw=1)
 
 
-## [Numpy Array vs. List](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
+## [List vs. Array vs. Numpy Array](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
+> *Using array module*   
 > *Using numpy module*
 
-Compare working time of numpy arrays and built-in lists.
+Compare working time of built-in lists, arrays from module arrays and numpy arrays.
 ```python
+import array
 import numpy as np
 ```
 
-Python built-in list without any elements (`l1 = []`) consumes 64 bytes. For every new element, it needs another 8 bytes for the reference to the new object. The new int object itself consumes 28 bytes. The size of a list `l1 = [5, 10, 15]` can be calculated with:
+Python built-in list without any elements (`list1 = []`) consumes 64 bytes. For every new element, it needs another 8 bytes for the reference to the new object. The new int object itself consumes 28 bytes. The size of a list `list1 = [5, 10, 15]` can be calculated with:
 
-`64 + 8 * len(l1) + 28 * len(l1) = 88 b (list) + 84 b (int elements) = 172 bytes`
+`64 + 8 * len(list1) + 28 * len(list1) = 88 b (list) + 84 b (int elements) = 172 bytes`
+
+Array from module array without any elements (`array1 = array.array('X')` where 'X' is a [type of array](https://docs.python.org/3/library/array.html)) consumes 64 bytes. For every new element, it needs another X bytes for the reference to the new object. The size of an array with signed int values (one element = 4 bytes) `array1 = array.array('i', [5, 10, 15])` can be calculated with:
+
+`64 + 4 * len(array1) = 88 bytes`
 
 NumPy array without any elements (`n1 = np.array([])`) consumes 96 bytes. For every new element, it also needs another 8 bytes for the reference to the new object. The size of a numpy array `n1 = np.array([5, 10, 15])`, where elements are of int64 type, can be calculated with:
 
 `96 + 8 * len(n1) = 120 bytes`
 
-NumPy arrays have smaller memory consumption and better runtime. 
+Even though array from module `array` consumes less memory, NumPy arrays have better runtime.
 
-The code:
-- creates two identical built-in lists L1 and L2 and numpy arrays N1 and N2
-- counts the time (in sec.) of merging two lists and two numpy arrays
-- prints in the ratio t1/t2 - how much faster merging numpy array is in comparison to built-in list
+The code `merge.py`:
+- Creates three identical built-in lists L1 and L2, arrays A1 and A2 and numpy arrays N1 and N2 in a range of 10000000
+- Merge two lists, two arrays and two numpy arrays
+
+The code `zip.py`:
+- Creates two identical built-in lists L1 and L2 and numpy arrays N1 and N2
+- Zip two lists and two numpy arrays
+
+The code `deco_time.py`:
+- Has a decorator which counts the time of execution of functions and prints it
+
 
 ## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 > *Using pandas module*
