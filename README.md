@@ -1,15 +1,17 @@
 # Introduction to elementary analysis using Python 3
 
-This repository presents all basic tasks as an introduction to analysis using Python.
+This repository represents all basic tasks as an introduction to analysis using Python.
 
 ## Projects
 
 Projects covering intro to data analysis using **Python3.7**
-- using basic types: list, tuple, set
-- basics of datetime module
-- basics of matplotlib module
-- basics of numpy arrays and pandas module
+- using iterative basic types: list, tuple, set, dictionary, string
+- basics of datetime module to work with date and time data
 - read/write text data and XML
+- basics of numpy arrays
+- pandas module for effective analysis
+- matplotlib module for plotting data
+
 
 ## [Text Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TextAnalysis)
 > *Using built-in capabilities for string data processing*
@@ -23,9 +25,9 @@ The code:
  - prints word(s) with maximum length
  - writes cleaned text to a new .txt file (one word per row).
 
-The folder also includes .txt file with chapter 6 of Dostoevsky's "Crime and Punishment" with English and Russian text.
+The folder includes file [CrimeAndPunishment.txt](https://github.com/LSIND/intro-to-python3-analysis/blob/master/TextAnalysis/CrimeAndPunishment.txt) with chapter 6 of Dostoevsky's "Crime and Punishment" with text in English and Russian.
 
-## [Temperatures Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TemperaturesAnalysis)
+## [Analysis of 1-dimensional data](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TemperaturesAnalysis)
 > *Using built-in capabilities for elementary analysis*
 
 Read .txt file, which contains a list of decimal numbers (temperatures), find and print maximum, minimum and average temperatures, print number of elements and unique elements, print number of occurances for every value in the form of: *temperature : occurrences*. Ask user to input an interval and print temperatures and occurences in this interval.
@@ -40,8 +42,10 @@ The code:
 
 The folder also includes 1tempdata.txt file with a set of temperature data (the monthly high temperatures at Heathrow Airport 1948 - 2016).
 
-## [Train Departure Analysis](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TrainDepAnalysis)
-> *Using datetime module*
+## [Analysis of multidimensional data](https://github.com/LSIND/intro-to-python3-analysis/tree/master/TrainDepAnalysis)
+> *Using built-in list and comprehensions*  
+> *Using datetime module*  
+> *Using Counter class from collections module*
 
 Read .txt file, which contains data with train departures (train no, datetime of scheduled department, datetime of actual department), find and print number of not operated trains, departures on time, late departures and next day departures.
 
@@ -67,8 +71,9 @@ The code:
 
 The folder also includes [depsalem.txt](https://github.com/LSIND/intro-to-python3-analysis/blob/master/TrainDepAnalysis/depsalem.txt) file with a set of [train departures](https://juckins.net/amtrak_status/archive/html/history.php) from Salem in period 09/01/2018 - 09/01/2019.
 
-## [Plot Currency Rates](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
-> *Using xml module to parse XML-data and matplotlib to plot it*
+## [Read XML-data](https://github.com/LSIND/intro-to-python3-analysis/tree/master/PlotCurrencyRates "PlotCurrencyRates")
+> *Using xml module to parse XML-data*  
+> *Using matplotlib to plot data*
 
 Read XML-data from [Central Bank of Russia](http://www.cbr.ru/development/SXML/) with currency information depending on period with ratio to Russian ruble. Plot the currency rates.
 
@@ -97,6 +102,7 @@ The code (**main. py**)
 ## [List vs. Array vs. Numpy Array](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
 > *Using array module*   
 > *Using numpy module*
+> *Create simple decorator function to count the time of execution*
 
 Compare working time of built-in lists, arrays from module arrays and numpy arrays.
 ```python
@@ -130,7 +136,7 @@ The code `deco_time.py`:
 - Has a decorator which counts the time of execution of functions and prints it
 
 
-## [Employees Counts](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
+## [Analyse CSV using Pandas](https://github.com/LSIND/intro-to-python3-analysis/tree/master/EmployeesCounts)
 > *Using pandas module*
 
 Create a dataframe from .csv file containing information about Employee and his hire datetime. Plot a graph with quantity of hired people by days of specified month.
@@ -154,4 +160,4 @@ The code:
  
 ![employees counts](https://www.dropbox.com/s/zplryx10b7o7iqr/plotemplcount.PNG?raw=1)
  
-The folder also includes empl.csv file with a set of employees names and hire dates and time.
+The folder also includes [empl.csv](https://github.com/LSIND/intro-to-python3-analysis/blob/master/EmployeesCounts/empl.csv) file with a set of employees names and hire dates and time.
