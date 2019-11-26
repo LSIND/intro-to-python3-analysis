@@ -99,6 +99,22 @@ The code (**main. py**)
 ![currency rates](https://www.dropbox.com/s/d2b03ndlok87q9j/ploteurotorub.PNG?raw=1)
 
 
+## [Count files and subfolders](https://github.com/LSIND/intro-to-python3-analysis/tree/master/CountFilesAndFolders)
+> *Using os module*   
+
+Provide the root directory and count files/subfolders inside it recursively.
+The output for `intro-to-python3-analysis-master`:
+```Console
+------> intro-to-python3-analysis-master :       7 folders,  2 files
+--------> CountFilesAndFolders :         0 folders,  1 files
+--------> EmployeesCounts :      0 folders,  2 files
+--------> NPArrayVSList :        0 folders,  3 files
+--------> PlotCurrencyRates :    0 folders,  2 files
+--------> TemperaturesAnalysis :         0 folders,  2 files
+--------> TextAnalysis :         0 folders,  3 files
+--------> TrainDepAnalysis :     0 folders,  2 files
+```
+
 ## [List vs. Array vs. Numpy Array](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
 > *Using array module*   
 > *Using numpy module*
