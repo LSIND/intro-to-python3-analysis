@@ -91,6 +91,22 @@
 - строит график курсов валют: Валюта / Российский рубль, используя *matplotlib*, например:  
 ![currency rates](https://www.dropbox.com/s/d2b03ndlok87q9j/ploteurotorub.PNG?raw=1)
 
+## [Подсчет количества файлов и вложенных папок](https://github.com/LSIND/intro-to-python3-analysis/tree/master/CountFilesAndFolders)
+> *Использование модуля os*   
+
+На вход поступает корневая директория.   
+Скрипт рекурсивно подсчитывает количество файлов и вложенных папок.  
+Вывод для `intro-to-python3-analysis-master`:
+```Console
+------> intro-to-python3-analysis-master :       7 folders,  2 files
+--------> CountFilesAndFolders :         0 folders,  1 files
+--------> EmployeesCounts :      0 folders,  2 files
+--------> NPArrayVSList :        0 folders,  3 files
+--------> PlotCurrencyRates :    0 folders,  2 files
+--------> TemperaturesAnalysis :         0 folders,  2 files
+--------> TextAnalysis :         0 folders,  3 files
+--------> TrainDepAnalysis :     0 folders,  2 files
+```
 
 ## [Сравнение скорости работы встроенного списка (list), array из модуля Array и массива NumPy](https://github.com/LSIND/intro-to-python3-analysis/tree/master/NPArrayVSList)
 > *Использование модуля array*  
