@@ -18,7 +18,7 @@ def merge_lists():
 def merge_arrays():
     A1 = array.array('i', range(SIZE))  # array from array module A1 = A2 = [0,1,2,...,100000000]
     A2 = array.array('i', range(SIZE))
-    result = A1+A2 # merge two numpy arrays
+    result = A1+A2 # merge two arrays
     print(result[0:10])
 
 
@@ -26,7 +26,7 @@ def merge_arrays():
 def merge_numpy_arr():
     N1 = np.arange(SIZE) # NP Array N1 = N2 = [0,1,2,...,100000000]
     N2 = np.arange(SIZE)
-    result = np.append(N1, N2)
+    result = np.append(N1, N2)   # merge two numpy arrays
     print(result[0:10])          # dimensions: 1 : SIZE : 2
 
 if __name__ == '__main__':
