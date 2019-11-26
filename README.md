@@ -102,7 +102,7 @@ The code (**main. py**)
 ## [Count files and subfolders](https://github.com/LSIND/intro-to-python3-analysis/tree/master/CountFilesAndFolders)
 > *Using os module*   
 
-Provide the root directory and count files/subfolders inside it recursively.
+Provide the root directory and count files/subfolders inside it recursively.  
 The output for `intro-to-python3-analysis-master`:
 ```Console
 ------> intro-to-python3-analysis-master :       7 folders,  2 files
