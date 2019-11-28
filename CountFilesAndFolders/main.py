@@ -4,7 +4,7 @@
 
 import os
 
-for root, dirs, files in os.walk('C:\MEGA\EURECA\Python\lab'):
+for root, dirs, files in os.walk('intro-to-python3-analysis-master'):
     path = root.split(os.sep)
 
     count_dirs = count_files = 0
