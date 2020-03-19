@@ -8,11 +8,11 @@ import array
 SIZE = 10000000
 
 @fdeco
-def merge_lists():
-    L1 = range(SIZE)                    # lists L1 = L2 = [0,1,2,...,100000000]
-    L2 = range(SIZE)
-    result =  [x for y in (L1,L2) for x in y]
-    print(result[0:10])
+def mergelists():
+    L1 = [*range(SIZE)]         # lists L1 = L2 = [0,1,2,3,....,100000000]
+    L2 = [*range(SIZE)]
+    res = L1 + L2
+    print(res[0:10])
 
 @fdeco
 def merge_arrays():
